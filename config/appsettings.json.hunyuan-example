@@ -1,0 +1,9 @@
+{
+  "endpointType": "text-completion",
+  "serviceType": "Hunyuan",
+  "modelId": "hunyuan",
+  "apiKey": "sk-1Ib4X0HmR4HzXXZ644D1DdCa96934f0199Dc2b0e162b524d",
+  "scheme": "http",
+  "host": "192.168.10.12",
+  "port": 3000
+}
