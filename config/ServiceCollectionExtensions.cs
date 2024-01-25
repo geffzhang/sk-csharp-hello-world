@@ -26,6 +26,9 @@ internal static class ServiceCollectionExtensions
             case ServiceTypes.HunyuanAI:                
                 kernelBuilder = kernelBuilder.AddOpenAIChatCompletion(modelId: kernelSettings.ModelId, apiKey: kernelSettings.ApiKey, httpClient: new HttpClient(handler));
                 break;
+            case ServiceTypes.LocalAI:
+                kernelBuilder = kernelBuilder.AddOpenAIChatCompletion(modelId: kernelSettings.ModelId, apiKey: kernelSettings.ApiKey, httpClient: new HttpClient(handler));
+                break;
             default:
                 throw new ArgumentException($"Invalid service type value: {kernelSettings.ServiceType}");
         }
